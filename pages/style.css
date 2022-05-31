@@ -16,9 +16,10 @@ html {
     letter-spacing: 0.3px;
     font-family: "Verdana", Helvetica, Arial, sans-serif;
     display: grid;
+    display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 0.16 0.16 0.16 0.16 0.16 0.16;
+    grid-template-rows: 90px 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr;
     grid-template-areas: 
     'menu-container'
     'present'
@@ -58,8 +59,6 @@ html {
     grid-area: container-footer;
 }
 
-
-
 /* inicio Header */
 
 .menu-container {
@@ -71,6 +70,7 @@ html {
     top: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .logo {
@@ -87,6 +87,7 @@ li {
     display: inline;
     text-align: right;
     margin: 0px 10px;
+    
 }
 
 .p-logo {
@@ -100,17 +101,24 @@ li {
 }
 
 .auno {
+    height: 60px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 5px 5px 12px 5px;
+    margin: 50px auto;
     text-decoration: none;
     color: #fffffff3;
     text-shadow: 1px 1px rgba(153, 151, 151, 0.836);
+    transition: all 0.4s; 
+}
+
+.auno:hover {
+    background-color: #145d5fc7;
+    border-bottom: 2px solid #05064ef6;
 }
 
 /* Fin Header */
 /* inicio Presentacion */
-
-.principal {
-    padding-top: 90px;
-}
 
 .container-inicio {
     background-color: rgb(206, 202, 202);
@@ -125,6 +133,7 @@ li {
     text-decoration: none;
     text-align: start;
     height: 21.5em;
+
     /* falta hacer el croll y usar el flexwrap */
 }
 
@@ -144,6 +153,7 @@ li {
 
 .foto-consul {
     max-width: 100%;
+    max-height: 100%;
 }
 
 /* Fin Presentacion  */
@@ -151,7 +161,7 @@ li {
 
 .texto-servicio {
     font-size: 1.5rem;
-    margin-bottom: 25px;
+    margin: 20px;
     color: rgb(6, 6, 31);
     padding-top: 90px;
 }
@@ -165,12 +175,22 @@ li {
     display: flex;
     color: rgb(6, 6, 31);
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
+}
+
+.li-servicios {
+    overflow: hidden;
 }
 
 .foto-servicio {
     width: 100%;
     height: 210px;
+    transition: all 0.8s;
+    vertical-align: top;
+}
+
+.foto-servicio:hover {
+    transform: scale(1.1);
 }
 
 .menu-servicios {
@@ -187,7 +207,7 @@ li {
     font-size: 1.5rem;
     margin: 20px;
     color: rgb(6, 6, 31);
-    padding: 90px 0px 40px 0px;
+    padding: 90px 0px 60px 0px;
 }
 
 .staff {
@@ -212,7 +232,7 @@ li {
 .texto {
     color: #65666C;
     text-align: justify;
-    margin: 30px 15px 0px 15px;
+    margin: 30px 15px 0px 15px;  
 }
 
 /* Fin Nosotras */
@@ -235,11 +255,13 @@ li {
 .img-whatsapp {
     width: 20%;
     height: auto;
+    z-index: -1;
 }
 
 .img-mail {
     width: 30%;
     height: auto;
+    z-index: -1;
 }
 
 .ul-turnos {
