@@ -19,7 +19,7 @@ html {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr 0.16fr;
+    grid-template-rows: auto;
     grid-template-areas: 
     'menu-container'
     'present'
@@ -125,6 +125,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 90px;
 }
 
 .present {
