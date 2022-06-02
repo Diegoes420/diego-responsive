@@ -15,6 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
+
+
 <body id="Inicio" class="body">
     <!-- Header -->
     <div class="div-cebecera">
@@ -35,36 +37,46 @@
         </ul>
     </div>
 
-    <header class="menues-container">
-
-        <div class="menu-container">
-            <a href="#Inicio"><img class="logo" src="/pages/imgs/logo consultorio2.png" alt="logo-consultorio"></a>
-            </img>
-            <!-- Inventado, por el momento no tienen logo -->
-            <nav class="menu">
-                <ul class="ul-menu">
-                    <li>
-                        <a class="auno" href="#Inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="auno" href="#Turnos">Turnos</a>
-                    </li>
-                    <li>
-                        <a class="auno" href="#Nuestros Servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a class="auno" href="#Staff">Staff</a>
-                    </li>
-                    <li>
-                        <a class="auno" href="#Sobre Nosotras">Nosotras</a>
-                    </li>
-                    <li>
-                        <a class="auno" href="#Turnos">Contacto</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <header class="row">
+            <nav class="navbar bg-light col-5">
+                <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/pages/imgs/logo consultorio2.png" alt="" width="100%" height="100%">
+                </a>
+            </div>
             </nav>
-        </div>
-    </header>
+            <nav class="navbar navbar-expand-lg bg-light col-7">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Turnos">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Nuestros Servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Staff">Staff</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Sobre Nosotras">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Turnos">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+    </div>
     <!-- Fin Header -->
 
 
