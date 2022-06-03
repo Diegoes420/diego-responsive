@@ -121,7 +121,9 @@ li {
 /* inicio Presentacion */
 
 .d-block {
-    height: 65vh;
+    width: 100%;
+    max-width: 100%;
+    max-height: 470px;
 }
 
 .container-inicio {
