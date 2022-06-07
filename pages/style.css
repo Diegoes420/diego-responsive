@@ -17,6 +17,12 @@ html {
     justify-content: space-around;
     height: 35px;
     background-color: #e4dab5b7;
+    flex-wrap: wrap;
+}
+
+.ul-cabecera {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Cabecera {
@@ -120,7 +126,6 @@ li {
     background-color: #86742a62;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .present {
@@ -140,7 +145,6 @@ li {
     padding-left: 50px;
     flex-direction: column;
     margin-right: 20vh;
-    flex-wrap: wrap;
 }
 
 .dras {
@@ -148,7 +152,6 @@ li {
 }
 
 .d-block {
-    overflow: hidden;
     object-fit: cover;
 }
 
@@ -172,6 +175,7 @@ li {
     color: rgb(6, 6, 31);
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     flex-wrap: wrap;
+    padding: 0px 30px;
 }
 
 .sss {
@@ -193,12 +197,17 @@ li {
 
 .li-servicios {
     width: 330px;
+    vertical-align: middle;
 }
 
 .foto-servicio:hover {
     transform: scale(1.15);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.lista-servicios {
+    vertical-align: middle;
 }
 
 .menu-servicios {
