@@ -93,8 +93,10 @@ li {
     position: sticky;
     top: 0;
     z-index: 999999;
-    background-color: #35816ed0;
+    background-color: #35816e;
     flex-wrap: wrap;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav-item {
