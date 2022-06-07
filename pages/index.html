@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./logo-para-ico.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
@@ -41,7 +42,7 @@
         
             <header class="row container-fluid">
                 
-                    <div class="container container-fluid vid-contenedor">
+                    <div class="container-fluid div-contenedor">
                         <nav class="navbar col-5">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="#">
@@ -57,22 +58,22 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="#Inicio">Inicio</a>
+                                            <a class="a-navbar" aria-current="page" href="#Inicio">Inicio</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="#Turnos">Turnos</a>
+                                            <a class="a-navbar" aria-current="page" href="#Turnos">Turnos</a>
                                         </li>
                                         <li class="nav-item">
-                                         <a class="nav-link" aria-current="page" href="#Nuestros Servicios">Servicios</a>
+                                         <a class="a-navbar" aria-current="page" href="#Nuestros Servicios">Servicios</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="#Staff">Staff</a>
+                                            <a class="a-navbar" aria-current="page" href="#Staff">Staff</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="#Sobre Nosotras">Nosotras</a>
+                                            <a class="a-navbar" aria-current="page" href="#Sobre Nosotras">Nosotras</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" aria-current="page" href="#Turnos">Contacto</a>
+                                            <a class="a-navbar" aria-current="page" href="#Turnos">Contacto</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -92,8 +93,8 @@
                 <section class="container-inicio">
                     <div class="present">
                         <div class="profe">
-                            <h3>Dra. Irene Casella </h3>
-                            <h3>Dra. Fiorella Barioglio</h3>
+                            <h4>Dra. CASELLA, Irene</h3>
+                            <h4 class="dras">Dra. BARIOGLIO, Fiorella</h3>
                             <p class="principal-lema">Cuidamos tu salud,</p>
                             <p class="principal-lema">Cuidamos tu sonrisa</p>
                         </div>
@@ -101,16 +102,16 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="/pages/imgs/primera.jpeg" class="d-block w-100" alt="Foto principal Consultorio">
+                                <img src="/pages/imgs/primera.jpeg" class="d-block" alt="Foto principal Consultorio" width="100%" height="460vh">
                               </div>
                               <div class="carousel-item active">
-                                <img src="/pages/imgs/consul irene.jpeg" class="d-block w-100" alt="Foto Consultorio 1">
+                                <img src="/pages/imgs/consul irene.jpeg" class="d-block" alt="Foto Consultorio 1" width="100%" height="460vh">
                               </div>
                               <div class="carousel-item">
-                                <img src="/pages/imgs/consul fiore.jpeg" class="d-block w-100" alt="Foto Consultorio 2">
+                                <img src="/pages/imgs/consul fiore.jpeg" class="d-block" alt="Foto Consultorio 2" width="100%" height="460vh">
                               </div>
                               <div class="carousel-item">
-                                <img src="/pages/imgs/sala espera.jpeg" class="d-block w-100" alt="Foto Sala de espera">
+                                <img src="/pages/imgs/sala espera.jpeg" class="d-block" alt="Foto Sala de espera" width="100%" height="460vh">
                               </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -130,23 +131,30 @@
                     <div class="servicios">
                         <ul class="ul-servicios">
                             <li class="li-servicios">
-                                <img class="foto-servicio" src="./imgs/odontologia general.jpg" alt="Odontologia General">
-                                <h4 class="menu-servicios">Odontología General</h4>
-                                </img>
+                                <div class="sss">
+                                    <img class="foto-servicio" src="./imgs/odontologia general.jpg" alt="Odontologia General"></img>
+                                </div>
+                                    <h4 class="menu-servicios">Odontología General</h4>
                             </li>
                             <li class="li-servicios">
-                                <img class="foto-servicio" src="./imgs/implante dental.jpg" alt="Implantes Dental">
+                                <div class="sss">
+                                    <img class="foto-servicio" src="./imgs/implante dental.jpg" alt="Implantes Dental">
+                                </div>
                                 <h4 class="menu-servicios">Implantes</h4>
                                 </img>
                             </li>
         
                             <li class="li-servicios">
-                                <img class="foto-servicio" src="./imgs/endodoncia.jpg" alt="Endodoncia">
+                                <div class="sss">
+                                    <img class="foto-servicio" src="./imgs/endodoncia.jpg" alt="Endodoncia">
+                                </div>
                                 <h4 class="menu-servicios">Endodoncia y Trauma</h4>
                                 </img>
                             </li>
                             <li class="li-servicios">
-                                <img class="foto-servicio" src="./imgs/estetica.jpg" alt="Estetica Bucal">
+                                <div class="sss">
+                                    <img class="foto-servicio" src="./imgs/estetica.jpg" alt="Estetica Bucal">
+                                </div>
                                 <h4 class="menu-servicios">Estética</h4>
                                 </img>
                             </li>
