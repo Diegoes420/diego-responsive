@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 22px;
     background-image: url(./imgs/25101.jpg);
@@ -15,8 +16,7 @@ html {
     display: flex;
     justify-content: space-around;
     height: 35px;
-    background-color: #e4dab5b7 ;
-    
+    background-color: #e4dab5b7;
 }
 
 .Cabecera {
@@ -34,19 +34,20 @@ li {
     font-family: "Verdana", Helvetica, Arial, sans-serif;
     display: grid;
     width: 100%;
-
+    margin: 0;
+    padding: 0;
 }
 
 .p-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    'present'
-    'servicios'
-    'staff'
-    'Nosotras-section'
-    'container-turno'
-    'container-footer'
+    grid-template-areas:
+        'present'
+        'servicios'
+        'staff'
+        'Nosotras-section'
+        'container-turno'
+        'container-footer'
     ;
 }
 
@@ -76,72 +77,58 @@ li {
 
 /* inicio Header */
 
-.vid-contenedor {
+.div-contenedor {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container-fluid {
-    
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 999999;
     background-color: #35816ed0;
     flex-wrap: wrap;
-
 }
 
-.header-navbar {
-    
-    margin: 0% !important;
-    padding: 0% !important;
+.nav-item {
+    padding-left: 20px;
 }
 
-.navbar {
-    margin: 0% !important;
-    padding: 0% !important;
-    
+.a-navbar {
+    height: 60px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 12px 5px 8px 5px;
+    margin: 50px auto;
+    text-decoration: none;
+    color: #ece7e7d3;
+    transition: all 0.6s;
+    font-family: 'Tiro Gurmukhi', serif;
 }
 
-.nav-link{
-    color: black;
-
+.a-navbar:hover {
+    background-color: #e4dab5b7;
+    border-bottom: 2px solid #00000521;
+    color: rgb(6, 6, 31);
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Fin Header */
 /* inicio Presentacion */
 
-.d-block {
-    width: 100%;
-    max-width: 100%;
-    max-height: 470px;
-}
-
 .container-inicio {
-    background-color: #ccc3a098;
+    background-color: #86742a62;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    padding-top: 0px;
+    flex-wrap: wrap;
 }
 
 .present {
     display: flex;
     color: rgb(6, 6, 31);
     text-decoration: none;
-    text-align: start;
     height: 21.5em;
-
-    /* falta hacer el croll y usar el flexwrap */
+    align-items: center;
 }
 
 .principal-lema {
@@ -149,18 +136,20 @@ li {
 }
 
 .profe {
-    padding: 80px 100px 80px 50px;
+    display: flex;
+    padding-left: 50px;
+    flex-direction: column;
+    margin-right: 20vh;
+    flex-wrap: wrap;
 }
 
-.palabra {
-    font-size: 0.8rem;
-    color: #39393a;
-    padding: 4px 50px;
+.dras {
+    padding: 18px 0px;
 }
 
-.foto-consul {
-    max-width: 100%;
-    max-height: 100%;
+.d-block {
+    overflow: hidden;
+    object-fit: cover;
 }
 
 /* Fin Presentacion  */
@@ -174,22 +163,21 @@ li {
 }
 
 .servicios {
-    margin: 0 !important;
-    padding: 0 !important;
     display: flex;
+    justify-content: space-around;
 }
 
 .ul-servicios {
     display: flex;
     color: rgb(6, 6, 31);
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    flex-wrap: wrap; 
-    margin: 0 !important;
-    padding: 0 !important; 
+    flex-wrap: wrap;
 }
 
-.li-servicios {
+.sss {
     overflow: hidden;
+    vertical-align: middle;
+    border-radius: 4px;
 }
 
 .foto-servicio {
@@ -197,10 +185,20 @@ li {
     height: 200px;
     transition: all 0.8s;
     vertical-align: top;
+    z-index: -1;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.li-servicios {
+    width: 330px;
 }
 
 .foto-servicio:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .menu-servicios {
@@ -208,6 +206,8 @@ li {
     color: #fffffff3;
     text-align: center;
     padding: 15px 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Fin Servicios */
@@ -242,28 +242,33 @@ li {
 .texto {
     color: #65666C;
     text-align: justify;
-    margin: 30px 15px 0px 15px;  
+    margin: 30px 15px 0px 15px;
 }
 
 /* Fin Nosotras */
 /* Inicio Turnos/Contacto */
-
-
 
 .texto-contacto {
     font-size: 1.5rem;
     margin: 20px;
     color: rgb(6, 6, 31);
     padding-top: 160px;
-    padding-bottom: 130px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
+.img-contacto {
+    max-width: 100%;
+    width: 20%;
+    max-height: 80vh;
+    float: right;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
 .img-whatsapp {
-    
     max-height: 80px;
     z-index: -1;
 }
@@ -280,15 +285,8 @@ li {
     justify-content: space-evenly;
     align-items: baseline;
     color: #65666C;
-    flex-wrap: wrap;  
-    text-align: center;  
-}
-
-.img-contacto {
-    max-width: 100%;
-    max-height: 170px;
-    position: absolute;
-    right: 120px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .wtsapp {
@@ -338,8 +336,8 @@ li {
 
 /* Fin Footer */
 
-.boton-seguir{
+.boton-seguir {
     position: sticky;
-        bottom: 100px;
-        left: 95%;
+    bottom: 100px;
+    left: 95%;
 }
