@@ -40,8 +40,8 @@ li {
     font-family: "Verdana", Helvetica, Arial, sans-serif;
     display: grid;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .p-grid {
@@ -140,6 +140,7 @@ li {
 
 .principal-lema {
     color: #65666C;
+    margin-bottom: 0;
 }
 
 .profe {
@@ -147,10 +148,11 @@ li {
     padding-left: 50px;
     flex-direction: column;
     margin-right: 20vh;
+    pa
 }
 
 .dras {
-    padding: 18px 0px;
+    padding: 10px 0px;
 }
 
 .d-block {
@@ -351,4 +353,14 @@ li {
     position: sticky;
     bottom: 100px;
     left: 95%;
+}
+@media screen and (max-width: 800px) {
+    .profe {
+        display: none;
+        height: 50%;
+    }
+    .present {
+        display: block;
+        height: 50%;
+    }
 }
