@@ -44,29 +44,40 @@ li {
     padding: 0 !important;
 }
 
-.p-grid {
+.body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        'present'
-        'servicios'
-        'staff'
+        'div-cebecera'
+        'row'
+        'container-inicio'
+        'lista-servicios'
+        'grid-staff'
         'Nosotras-section'
         'container-turno'
         'container-footer'
+        'boton-seguir'
     ;
 }
 
-.present {
-    grid-area: present;
+.div-cebecera {
+    grid-area: div-cebecera;
 }
 
-.servicios {
-    grid-area: servicios;
+.row {
+    grid-area: row;
 }
 
-.staff {
-    grid-area: staff;
+.container-inicio {
+    grid-area: container-inicio;
+}
+
+.lista-servicios {
+    grid-area: lista-servicios;
+}
+
+.grid-staff {
+    grid-area: grid-staff;
 }
 
 .Nosotras-section {
@@ -79,6 +90,10 @@ li {
 
 .container-footer {
     grid-area: container-footer;
+}
+
+.boton-seguir {
+    grid-area: boton-seguir;
 }
 
 /* inicio Header */
@@ -148,7 +163,6 @@ li {
     padding-left: 50px;
     flex-direction: column;
     margin-right: 20vh;
-    pa
 }
 
 .dras {
@@ -357,10 +371,10 @@ li {
 @media screen and (max-width: 800px) {
     .profe {
         display: none;
-        height: 50%;
+        
     }
     .present {
         display: block;
-        height: 50%;
+      
     }
 }
