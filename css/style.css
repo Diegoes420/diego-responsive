@@ -81,6 +81,10 @@ html {
   padding: 0 !important;
 }
 
+.logo-consultorio {
+  padding-left: 2rem;
+}
+
 .navbar-nav {
   flex-wrap: wrap;
 }
