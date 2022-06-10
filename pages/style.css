@@ -119,15 +119,15 @@ li {
 }
 
 .nav-item {
-    padding-left: 20px;
+    padding-left: 1rem;
 }
 
 .a-navbar {
     height: 60px;
-    width: 80px;
+    width: 3.5rem;
     border-radius: 8px;
     padding: 12px 5px 8px 5px;
-    margin: 50px auto;
+    margin: 50px 5px;
     text-decoration: none;
     color: #ece7e7d3;
     transition: all 0.6s;
@@ -164,9 +164,9 @@ li {
 
 .profe {
     display: flex;
-    padding-left: 50px;
+    padding-left: 2.3rem;
     flex-direction: column;
-    margin-right: 20vh;
+    margin-right: 6rem;
 }
 
 .dras {
@@ -221,7 +221,7 @@ li {
 }
 
 .li-servicios {
-    width: 330px;
+    width: 15rem;
     vertical-align: middle;
 }
 
@@ -386,3 +386,4 @@ li {
         flex-direction: column;
     }
 }
+
