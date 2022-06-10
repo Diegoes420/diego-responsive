@@ -8,29 +8,6 @@ html {
     font-size: 22px;
 }
 
-.div-cebecera {
-    display: flex;
-    justify-content: space-around;
-    height: 35px;
-    background-color: #e4dab5b7;
-    flex-wrap: wrap;
-}
-
-.ul-cabecera {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Cabecera {
-    font-size: 0.6rem;
-}
-
-li {
-    display: inline;
-    text-align: right;
-    margin: 0px 10px;
-}
-
 .body {
     letter-spacing: 0.3px;
     font-family: "Verdana", Helvetica, Arial, sans-serif;
@@ -43,7 +20,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+/* Inicio GRID */
 .body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -95,9 +72,9 @@ li {
 .boton-seguir {
     grid-area: boton-seguir;
 }
+/* Fin GRID */
 
 /* inicio Header */
-
 .div-contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -387,6 +364,35 @@ li {
     }
 }
 
-.p {
-    background-color: red;
+//iniciando canversion a sass
+
+//variables
+$color-cabecera: rgba(228, 218, 181, 0.7176470588);
+$color-navbar: rgba(38, 129, 106, 0.8823529412);
+$color-principal: rgba(134, 116, 42, 0.3843137255);
+$color-lema: #65666C;
+$color-letras-titulos: rgb(6, 6, 31);
+$color-letras-grises: #65666C;
+$margenes-titulos: 20px;
+
+//nesting
+
+.div-cebecera {
+    display: flex;
+    justify-content: space-around;
+    height: 35px;
+    background-color: $color-cabecera;
+    flex-wrap: wrap;
+    .ul-cabecera {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .li-cebecera {
+        display: inline;
+        text-align: right;
+        margin: 0px 10px;
+      }
+    .Cabecera {
+        font-size: 0.6rem;
+      }
 }

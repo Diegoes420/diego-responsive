@@ -8,29 +8,6 @@ html {
   font-size: 22px;
 }
 
-.div-cebecera {
-  display: flex;
-  justify-content: space-around;
-  height: 35px;
-  background-color: rgba(228, 218, 181, 0.7176470588);
-  flex-wrap: wrap;
-}
-
-.ul-cabecera {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.Cabecera {
-  font-size: 0.6rem;
-}
-
-li {
-  display: inline;
-  text-align: right;
-  margin: 0px 10px;
-}
-
 .body {
   letter-spacing: 0.3px;
   font-family: "Verdana", Helvetica, Arial, sans-serif;
@@ -44,6 +21,7 @@ li {
   background-attachment: fixed;
 }
 
+/* Inicio GRID */
 .body {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -85,6 +63,7 @@ li {
 .boton-seguir {
   grid-area: boton-seguir;
 }
+/* Fin GRID */
 
 /* inicio Header */
 .div-contenedor {
@@ -370,8 +349,24 @@ li {
     flex-direction: column;
   }
 }
-.p {
-  background-color: red;
+.div-cebecera {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  background-color: rgba(228, 218, 181, 0.7176470588);
+  flex-wrap: wrap;
+}
+.div-cebecera .ul-cabecera {
+  display: flex;
+  flex-wrap: wrap;
+}
+.div-cebecera .li-cebecera {
+  display: inline;
+  text-align: right;
+  margin: 0px 10px;
+}
+.div-cebecera .Cabecera {
+  font-size: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
